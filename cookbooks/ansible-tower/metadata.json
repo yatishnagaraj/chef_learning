@@ -1,0 +1,31 @@
+{
+  "name": "ansible-tower",
+  "version": "0.1.1",
+  "description": "Installs/Configures Ansible Tower",
+  "long_description": "ansible-tower Cookbook\n======================\nCookbook to download, setup, and install Ansible Tower.\n\n\nRequirements\n------------\n### Cookbooks:\n- python\n\n### Operating Systems:\n- Ubuntu 12.04\n\nAttributes\n----------\n#### ansible-tower::default\nKey|Type|Description|Default\n---|----|-----------|-------\n['ansible']['download_url']|String|Location of Ansible Tower tarball to install|http://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz\n['ansible']['server_name']|String|Name for Tower|`node['fqdn']`\n['ansible']['tower']['admin_password']|String|Tower Admin Password|AWsecret\n['ansible']['postgres']['admin_password']|String|Postgres Admin Password|password\n['ansible']['rabbitmq']['admin_password']|String|Rabbit MQ Admin Password|AWXbunnies\n\nUsage\n-----\n#### ansible-tower::default\nTODO: Write usage instructions for each cookbook.\n\ne.g.\nJust include `ansible-tower` in your node's `run_list`:\n\n```json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[ansible-tower]\"\n  ]\n}\n```\n\nContributing\n------------\n\n1. Fork the repository on Github\n2. Create a named feature branch (like `add_component_x`)\n3. Write your change\n4. Write tests for your change (if applicable)\n5. Run the tests, ensuring they all pass\n6. Submit a Pull Request using Github\n\nLicense and Authors\n-------------------\nAuthors: Brint O'Hearn (<brint.ohearn@rackspace.com>)\n",
+  "maintainer": "Brint O'Hearn",
+  "maintainer_email": "brint.ohearn@rackspace.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "ubuntu": ">= 0.0.0"
+  },
+  "dependencies": {
+    "python": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  }
+}
